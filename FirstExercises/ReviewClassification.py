@@ -1,6 +1,6 @@
-from statistics import mode
-from warnings import catch_warnings
 from keras.datasets import imdb
+#per aggiungere la regolarizzazione ai modelli
+from keras import regularizers
 
 # con num_words decidi di tenere solo le top 10000 parole più frequenti, così eliminando le
 # parole più rare si ottengono vettori di dati di dimensione gestibile
@@ -36,8 +36,9 @@ y_test = np.asarray(test_labels).astype('float32')
 from keras import models
 from keras import layers
 model = models.Sequential()
-model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
-model.add(layers.Dense(16, activation='relu'))
+model.add(layers.Dense(16, kernel_regularizer=regularizers.l2(0.001),activation='relu', input_shape=(10000,)))
+model.add(layers.Dropout(0.5))
+model.add(layers.Dense(16, kernel_regularizer=regularizers.l2(0.001),activation='relu'))
 # sigmoid ritorna una valore tra 0 e 1 che può essere interpretato come una probabilità
 model.add(layers.Dense(1, activation='sigmoid'))
 # adesso compiliamo il modello,
@@ -55,7 +56,7 @@ partial_y_train = y_train[10000:]
 # TRAINING
 history = model.fit(partial_x_train,
                     partial_y_train,
-                    epochs=4,
+                    epochs=5,
                     batch_size=512,
                     validation_data=(x_val, y_val))
 
