@@ -11,6 +11,13 @@
 *.sln.docstates
 *.DS_Store
 
+#project specific
+data/train/image/*
+data/train/annotation/*
+data/val/image/*
+data/val/annotation/*
+.weights
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
