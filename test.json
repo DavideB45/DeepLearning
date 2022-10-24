@@ -1,0 +1,4202 @@
+[
+    {
+        "image": "CosoVerde_0676.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1282,
+                    "y": 1626,
+                    "width": 1734,
+                    "height": 1631
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0556.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2323,
+                    "y": 1025,
+                    "width": 2557,
+                    "height": 1726
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0675.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1658,
+                    "y": 1490,
+                    "width": 2520,
+                    "height": 2624
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0783.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1167,
+                    "y": 3003,
+                    "width": 1309,
+                    "height": 1145
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0649.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1257,
+                    "y": 1653,
+                    "width": 2155,
+                    "height": 1009
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0797.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1824,
+                    "y": 1389,
+                    "width": 1423,
+                    "height": 1146
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0768.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1604,
+                    "y": 957,
+                    "width": 1616,
+                    "height": 1551
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0755.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 695,
+                    "y": 3158,
+                    "width": 1107,
+                    "height": 1227
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0741.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1955,
+                    "y": 1620,
+                    "width": 933,
+                    "height": 1075
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0769.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1137,
+                    "y": 1786,
+                    "width": 1837,
+                    "height": 1914
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0745.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1265,
+                    "y": 2567,
+                    "width": 873,
+                    "height": 764
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0671.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1083,
+                    "y": 2946,
+                    "width": 1674,
+                    "height": 1729
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0785.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2048,
+                    "y": 1072,
+                    "width": 1096,
+                    "height": 917
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0546.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2477,
+                    "y": 783,
+                    "width": 2659,
+                    "height": 1325
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0800.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 706,
+                    "y": 2834,
+                    "width": 900,
+                    "height": 731
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0553.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1841,
+                    "y": 1708,
+                    "width": 1336,
+                    "height": 1532
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0747.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1282,
+                    "y": 1721,
+                    "width": 666,
+                    "height": 557
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0753.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 930,
+                    "y": 2024,
+                    "width": 1129,
+                    "height": 987
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0708.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 3031,
+                    "y": 1238,
+                    "width": 1101,
+                    "height": 1072
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0520.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1140,
+                    "y": 1893,
+                    "width": 2280,
+                    "height": 3038
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0709.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2905,
+                    "y": 1843,
+                    "width": 1248,
+                    "height": 1023
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0480.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1306,
+                    "y": 1623,
+                    "width": 2035,
+                    "height": 1963
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0455 2.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1375,
+                    "y": 1648,
+                    "width": 1920,
+                    "height": 1806
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0617.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2092,
+                    "y": 1340,
+                    "width": 2839,
+                    "height": 2462
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0527.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1906,
+                    "y": 1233,
+                    "width": 1761,
+                    "height": 1271
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0490.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1868,
+                    "y": 1165,
+                    "width": 2307,
+                    "height": 1767
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0727.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1047,
+                    "y": 1612,
+                    "width": 1037,
+                    "height": 1101
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0606.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1543,
+                    "y": 2439,
+                    "width": 2847,
+                    "height": 2678
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0492.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1462,
+                    "y": 963,
+                    "width": 2128,
+                    "height": 1200
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0519.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1134,
+                    "y": 2019,
+                    "width": 2171,
+                    "height": 2722
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0524.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1955,
+                    "y": 2970,
+                    "width": 1773,
+                    "height": 1669
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0729.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1598,
+                    "y": 1457,
+                    "width": 993,
+                    "height": 758
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0715.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1497,
+                    "y": 1241,
+                    "width": 1009,
+                    "height": 1287
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0581.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1260,
+                    "y": 2021,
+                    "width": 2324,
+                    "height": 3153
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0514.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1374,
+                    "y": 1342,
+                    "width": 1833,
+                    "height": 1685
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0621.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2528,
+                    "y": 1174,
+                    "width": 2499,
+                    "height": 2172
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0635.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1486,
+                    "y": 1612,
+                    "width": 1893,
+                    "height": 1331
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0623.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1998,
+                    "y": 1456,
+                    "width": 2733,
+                    "height": 2459
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0637.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1633,
+                    "y": 1138,
+                    "width": 2013,
+                    "height": 1582
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0716.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1334,
+                    "y": 1828,
+                    "width": 1184,
+                    "height": 1358
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0463.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1091,
+                    "y": 1746,
+                    "width": 2182,
+                    "height": 2471
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0587.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1208,
+                    "y": 1255,
+                    "width": 2242,
+                    "height": 1936
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0579.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1418,
+                    "y": 1511,
+                    "width": 2662,
+                    "height": 2547
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0706.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2336,
+                    "y": 1064,
+                    "width": 1378,
+                    "height": 1018
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0627.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1499,
+                    "y": 1464,
+                    "width": 2259,
+                    "height": 2017
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0458.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1803,
+                    "y": 2577,
+                    "width": 2242,
+                    "height": 2411
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0504.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 939,
+                    "y": 1428,
+                    "width": 1350,
+                    "height": 1542
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0585.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1977,
+                    "y": 2046,
+                    "width": 1969,
+                    "height": 2111
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0511.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1519,
+                    "y": 2422,
+                    "width": 1467,
+                    "height": 1413
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0539.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1274,
+                    "y": 1255,
+                    "width": 2122,
+                    "height": 1958
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0471.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1935,
+                    "y": 1256,
+                    "width": 2753,
+                    "height": 2107
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0459.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1061,
+                    "y": 2637,
+                    "width": 2090,
+                    "height": 2171
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0656.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1475,
+                    "y": 1628,
+                    "width": 2547,
+                    "height": 2531
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0548.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1571,
+                    "y": 1407,
+                    "width": 2344,
+                    "height": 2557
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0760.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1379,
+                    "y": 1221,
+                    "width": 1550,
+                    "height": 1293
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0669.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1050,
+                    "y": 930,
+                    "width": 1554,
+                    "height": 1451
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0651.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1636,
+                    "y": 1904,
+                    "width": 2139,
+                    "height": 1489
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0678.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1064,
+                    "y": 1746,
+                    "width": 1822,
+                    "height": 1816
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0798.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1020,
+                    "y": 1397,
+                    "width": 1309,
+                    "height": 1042
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0647.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1462,
+                    "y": 1648,
+                    "width": 2498,
+                    "height": 2776
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0662.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1173,
+                    "y": 2084,
+                    "width": 2018,
+                    "height": 2329
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0794.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 564,
+                    "y": 1563,
+                    "width": 1129,
+                    "height": 1167
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0780.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1595,
+                    "y": 1394,
+                    "width": 1631,
+                    "height": 1276
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0757.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2184,
+                    "y": 2630,
+                    "width": 1173,
+                    "height": 1140
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0743.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 933,
+                    "y": 1694,
+                    "width": 894,
+                    "height": 993
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0543.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1822,
+                    "y": 994,
+                    "width": 2725,
+                    "height": 1641
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0542.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1102,
+                    "y": 2545,
+                    "width": 1952,
+                    "height": 2302
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0742.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1620,
+                    "y": 1928,
+                    "width": 971,
+                    "height": 927
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0756.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1903,
+                    "y": 1568,
+                    "width": 1265,
+                    "height": 1309
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0781.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1560,
+                    "y": 1097,
+                    "width": 1506,
+                    "height": 1250
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0795.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1208,
+                    "y": 2853,
+                    "width": 1478,
+                    "height": 1402
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0663.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1442,
+                    "y": 1637,
+                    "width": 2427,
+                    "height": 2274
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0677.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1615,
+                    "y": 2711,
+                    "width": 2040,
+                    "height": 2001
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0661.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1293,
+                    "y": 2346,
+                    "width": 1560,
+                    "height": 1991
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0740.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2076,
+                    "y": 1334,
+                    "width": 908,
+                    "height": 814
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0754.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1022,
+                    "y": 2981,
+                    "width": 1227,
+                    "height": 1123
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0554.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1546,
+                    "y": 1487,
+                    "width": 2503,
+                    "height": 1276
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0540.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2122,
+                    "y": 1342,
+                    "width": 1800,
+                    "height": 2319
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0541.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1805,
+                    "y": 1290,
+                    "width": 1833,
+                    "height": 1953
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0555.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1584,
+                    "y": 1631,
+                    "width": 2427,
+                    "height": 1281
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0796.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2157,
+                    "y": 1571,
+                    "width": 1435,
+                    "height": 1359
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0648.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1524,
+                    "y": 1574,
+                    "width": 2645,
+                    "height": 1342
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0782.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1707,
+                    "y": 2916,
+                    "width": 1342,
+                    "height": 1288
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0674.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1418,
+                    "y": 807,
+                    "width": 2105,
+                    "height": 1391
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0660.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1200,
+                    "y": 1691,
+                    "width": 2138,
+                    "height": 2515
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0658.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1394,
+                    "y": 1189,
+                    "width": 1696,
+                    "height": 1795
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0786.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1140,
+                    "y": 3085,
+                    "width": 1178,
+                    "height": 1026
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0792.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1718,
+                    "y": 1143,
+                    "width": 2040,
+                    "height": 1625
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0664.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1505,
+                    "y": 1574,
+                    "width": 2389,
+                    "height": 2105
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0670.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1650,
+                    "y": 999,
+                    "width": 2144,
+                    "height": 1794
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0751.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1230,
+                    "y": 1901,
+                    "width": 1456,
+                    "height": 1243
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0779.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 736,
+                    "y": 1874,
+                    "width": 1255,
+                    "height": 1025
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0551.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2272,
+                    "y": 949,
+                    "width": 1325,
+                    "height": 1313
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0545.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2105,
+                    "y": 841,
+                    "width": 2544,
+                    "height": 1178
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0802.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2125,
+                    "y": 1288,
+                    "width": 1042,
+                    "height": 856
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0544.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1886,
+                    "y": 978,
+                    "width": 2360,
+                    "height": 1338
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0550.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2068,
+                    "y": 928,
+                    "width": 2496,
+                    "height": 1853
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0778.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 834,
+                    "y": 2760,
+                    "width": 1233,
+                    "height": 1173
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0750.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1287,
+                    "y": 3259,
+                    "width": 829,
+                    "height": 753
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0744.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1118,
+                    "y": 2842,
+                    "width": 927,
+                    "height": 977
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0665.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1811,
+                    "y": 1473,
+                    "width": 2084,
+                    "height": 2700
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0793.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1039,
+                    "y": 993,
+                    "width": 1391,
+                    "height": 922
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0659.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1740,
+                    "y": 1803,
+                    "width": 1789,
+                    "height": 3163
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0791.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1178,
+                    "y": 2488,
+                    "width": 2018,
+                    "height": 1882
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0673.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1546,
+                    "y": 1318,
+                    "width": 1980,
+                    "height": 2072
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0667.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1508,
+                    "y": 1814,
+                    "width": 1544,
+                    "height": 1593
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0752.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1148,
+                    "y": 1751,
+                    "width": 1435,
+                    "height": 1271
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0746.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1304,
+                    "y": 1727,
+                    "width": 676,
+                    "height": 578
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0552.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1039,
+                    "y": 1192,
+                    "width": 1326,
+                    "height": 1003
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0801.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1274,
+                    "y": 2932,
+                    "width": 900,
+                    "height": 819
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0547.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 890,
+                    "y": 1303,
+                    "width": 1776,
+                    "height": 2544
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0666.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1173,
+                    "y": 2812,
+                    "width": 2094,
+                    "height": 2259
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0672.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1947,
+                    "y": 2201,
+                    "width": 1811,
+                    "height": 1941
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0784.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 821,
+                    "y": 1389,
+                    "width": 1140,
+                    "height": 906
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0790.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 832,
+                    "y": 1970,
+                    "width": 1380,
+                    "height": 1380
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0615.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1424,
+                    "y": 1988,
+                    "width": 2618,
+                    "height": 2967
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0601.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1276,
+                    "y": 1517,
+                    "width": 2073,
+                    "height": 2350
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0629.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1491,
+                    "y": 1566,
+                    "width": 2449,
+                    "height": 1086
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0734.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1355,
+                    "y": 3003,
+                    "width": 1119,
+                    "height": 1015
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0720.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2571,
+                    "y": 870,
+                    "width": 1317,
+                    "height": 900
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0468.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2305,
+                    "y": 843,
+                    "width": 2593,
+                    "height": 1296
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0497.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1568,
+                    "y": 1372,
+                    "width": 2765,
+                    "height": 1680
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0483.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2133,
+                    "y": 764,
+                    "width": 1582,
+                    "height": 1162
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0534.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1402,
+                    "y": 1850,
+                    "width": 1648,
+                    "height": 1544
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0577.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1431,
+                    "y": 2180,
+                    "width": 2209,
+                    "height": 3120
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0508.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1167,
+                    "y": 1909,
+                    "width": 2117,
+                    "height": 1751
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0588.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1009,
+                    "y": 2703,
+                    "width": 1571,
+                    "height": 2225
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0589.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1653,
+                    "y": 2621,
+                    "width": 2640,
+                    "height": 2619
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0509.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1423,
+                    "y": 1940,
+                    "width": 2487,
+                    "height": 2258
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0535.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 955,
+                    "y": 1222,
+                    "width": 1582,
+                    "height": 1533
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0521.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1892,
+                    "y": 879,
+                    "width": 1647,
+                    "height": 1326
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0482.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1527,
+                    "y": 777,
+                    "width": 1603,
+                    "height": 1211
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0496.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2475,
+                    "y": 710,
+                    "width": 2614,
+                    "height": 1194
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0469.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1743,
+                    "y": 935,
+                    "width": 3178,
+                    "height": 1596
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0721.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1688,
+                    "y": 773,
+                    "width": 1252,
+                    "height": 1011
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0735.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 912,
+                    "y": 1260,
+                    "width": 1223,
+                    "height": 675
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0628.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2383,
+                    "y": 1266,
+                    "width": 2708,
+                    "height": 1882
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0600.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1416,
+                    "y": 1716,
+                    "width": 2220,
+                    "height": 2552
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0614.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2193,
+                    "y": 1711,
+                    "width": 1560,
+                    "height": 2018
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0602.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1756,
+                    "y": 1323,
+                    "width": 2259,
+                    "height": 2269
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0616.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2111,
+                    "y": 1241,
+                    "width": 3448,
+                    "height": 1203
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0723.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1847,
+                    "y": 747,
+                    "width": 1244,
+                    "height": 974
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0737.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2915,
+                    "y": 790,
+                    "width": 1366,
+                    "height": 1190
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0457.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1151,
+                    "y": 1252,
+                    "width": 1930,
+                    "height": 1659
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0494.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2340,
+                    "y": 1000,
+                    "width": 2410,
+                    "height": 1629
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0537.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1920,
+                    "y": 2185,
+                    "width": 1582,
+                    "height": 1604
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0523.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 853,
+                    "y": 1866,
+                    "width": 1609,
+                    "height": 1478
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0522.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1890,
+                    "y": 993,
+                    "width": 1631,
+                    "height": 1435
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0536.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1549,
+                    "y": 1620,
+                    "width": 1462,
+                    "height": 1533
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0495.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2477,
+                    "y": 775,
+                    "width": 2716,
+                    "height": 1309
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0481.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1082,
+                    "y": 1157,
+                    "width": 1609,
+                    "height": 1238
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0456.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1282,
+                    "y": 1912,
+                    "width": 2302,
+                    "height": 1909
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0722.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 3226,
+                    "y": 1323,
+                    "width": 1334,
+                    "height": 925
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0607.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1669,
+                    "y": 1383,
+                    "width": 2236,
+                    "height": 1898
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0613.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 963,
+                    "y": 2556,
+                    "width": 1478,
+                    "height": 1974
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0726.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1063,
+                    "y": 1877,
+                    "width": 1069,
+                    "height": 944
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0732.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2097,
+                    "y": 2043,
+                    "width": 823,
+                    "height": 1200
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0485.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1268,
+                    "y": 1803,
+                    "width": 2438,
+                    "height": 2422
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0491.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1505,
+                    "y": 1138,
+                    "width": 2389,
+                    "height": 1560
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0532.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1590,
+                    "y": 1760,
+                    "width": 2122,
+                    "height": 2040
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0526.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1846,
+                    "y": 1141,
+                    "width": 1827,
+                    "height": 1260
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0533.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1167,
+                    "y": 2932,
+                    "width": 1505,
+                    "height": 1571
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0484.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1254,
+                    "y": 2149,
+                    "width": 2095,
+                    "height": 2035
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0733.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1530,
+                    "y": 2744,
+                    "width": 1064,
+                    "height": 1140
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0612.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1235,
+                    "y": 2518,
+                    "width": 1751,
+                    "height": 2280
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0638.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1377,
+                    "y": 1386,
+                    "width": 2057,
+                    "height": 1292
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0610.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1044,
+                    "y": 1105,
+                    "width": 1511,
+                    "height": 1833
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0604.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1061,
+                    "y": 1206,
+                    "width": 1904,
+                    "height": 1860
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0731.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2010,
+                    "y": 1730,
+                    "width": 1020,
+                    "height": 1096
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0725.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2250,
+                    "y": 1620,
+                    "width": 1010,
+                    "height": 920
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0719.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2230,
+                    "y": 742,
+                    "width": 1264,
+                    "height": 769
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0479.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1235,
+                    "y": 1740,
+                    "width": 2263,
+                    "height": 2111
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0486.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1437,
+                    "y": 2057,
+                    "width": 2482,
+                    "height": 2220
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0525.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1639,
+                    "y": 1007,
+                    "width": 2133,
+                    "height": 1528
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0531.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1535,
+                    "y": 1697,
+                    "width": 2177,
+                    "height": 1850
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0599.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1366,
+                    "y": 1626,
+                    "width": 2329,
+                    "height": 2711
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0598.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1606,
+                    "y": 1140,
+                    "width": 2537,
+                    "height": 1555
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0530.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1991,
+                    "y": 1759,
+                    "width": 1450,
+                    "height": 2105
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0518.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1061,
+                    "y": 1522,
+                    "width": 1806,
+                    "height": 2079
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0487.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1295,
+                    "y": 2101,
+                    "width": 2199,
+                    "height": 2078
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0493.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2731,
+                    "y": 741,
+                    "width": 2152,
+                    "height": 1362
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0478.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1325,
+                    "y": 2564,
+                    "width": 2411,
+                    "height": 2296
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0718.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1399,
+                    "y": 1318,
+                    "width": 1227,
+                    "height": 1418
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0724.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 976,
+                    "y": 703,
+                    "width": 1472,
+                    "height": 945
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0730.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1890,
+                    "y": 1571,
+                    "width": 758,
+                    "height": 921
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0605.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1462,
+                    "y": 1293,
+                    "width": 2356,
+                    "height": 2329
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0611.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1590,
+                    "y": 1926,
+                    "width": 1598,
+                    "height": 2308
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0639.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1216,
+                    "y": 2856,
+                    "width": 1997,
+                    "height": 1506
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0634.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1407,
+                    "y": 1800,
+                    "width": 2018,
+                    "height": 1893
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0620.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2358,
+                    "y": 1912,
+                    "width": 2307,
+                    "height": 1865
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0608.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1331,
+                    "y": 2335,
+                    "width": 2150,
+                    "height": 2329
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0701.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 783,
+                    "y": 1269,
+                    "width": 1162,
+                    "height": 1342
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0475.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1759,
+                    "y": 1795,
+                    "width": 2318,
+                    "height": 2678
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0461.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1091,
+                    "y": 1100,
+                    "width": 1920,
+                    "height": 1920
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0501.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1651,
+                    "y": 943,
+                    "width": 1678,
+                    "height": 1669
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0515.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1772,
+                    "y": 1318,
+                    "width": 1833,
+                    "height": 1800
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0529.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1145,
+                    "y": 2389,
+                    "width": 1887,
+                    "height": 1827
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0595.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1698,
+                    "y": 1080,
+                    "width": 3228,
+                    "height": 1861
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0594.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1306,
+                    "y": 1541,
+                    "width": 2253,
+                    "height": 2749
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0580.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1216,
+                    "y": 1877,
+                    "width": 2203,
+                    "height": 3158
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0528.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1006,
+                    "y": 2029,
+                    "width": 1751,
+                    "height": 2111
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0500.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 3105,
+                    "y": 1346,
+                    "width": 1755,
+                    "height": 1772
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0460.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1560,
+                    "y": 1721,
+                    "width": 1571,
+                    "height": 1407
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0474.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1805,
+                    "y": 936,
+                    "width": 2117,
+                    "height": 1756
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0700.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1781,
+                    "y": 2264,
+                    "width": 1074,
+                    "height": 1173
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0714.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2577,
+                    "y": 1092,
+                    "width": 1051,
+                    "height": 1183
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0728.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1285,
+                    "y": 2027,
+                    "width": 900,
+                    "height": 1222
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0609.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1431,
+                    "y": 1258,
+                    "width": 2569,
+                    "height": 2302
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0702.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1222,
+                    "y": 1337,
+                    "width": 1374,
+                    "height": 1380
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0476.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1993,
+                    "y": 2128,
+                    "width": 1675,
+                    "height": 2460
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0489.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1429,
+                    "y": 1255,
+                    "width": 2094,
+                    "height": 1369
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0516.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1339,
+                    "y": 2425,
+                    "width": 2002,
+                    "height": 1800
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0502.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1137,
+                    "y": 1477,
+                    "width": 1599,
+                    "height": 1640
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0596.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1702,
+                    "y": 1274,
+                    "width": 2860,
+                    "height": 2053
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0582.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1006,
+                    "y": 1389,
+                    "width": 1631,
+                    "height": 1898
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0583.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1647,
+                    "y": 1334,
+                    "width": 1843,
+                    "height": 2247
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0503.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1761,
+                    "y": 2377,
+                    "width": 1890,
+                    "height": 1142
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0517.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1355,
+                    "y": 1776,
+                    "width": 2307,
+                    "height": 2160
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0488.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1372,
+                    "y": 1181,
+                    "width": 2372,
+                    "height": 1963
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0477.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1328,
+                    "y": 2425,
+                    "width": 2307,
+                    "height": 2029
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0717.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 872,
+                    "y": 1629,
+                    "width": 1167,
+                    "height": 1506
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0703.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1827,
+                    "y": 2510,
+                    "width": 895,
+                    "height": 998
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0636.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1675,
+                    "y": 2891,
+                    "width": 2040,
+                    "height": 1423
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0622.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2618,
+                    "y": 1203,
+                    "width": 2606,
+                    "height": 2230
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0626.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1487,
+                    "y": 1792,
+                    "width": 2471,
+                    "height": 2328
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0632.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1835,
+                    "y": 2556,
+                    "width": 2067,
+                    "height": 1756
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0707.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2939,
+                    "y": 1501,
+                    "width": 1383,
+                    "height": 1043
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0713.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2600,
+                    "y": 992,
+                    "width": 1064,
+                    "height": 1162
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0467.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1779,
+                    "y": 761,
+                    "width": 2843,
+                    "height": 1387
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0473.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2500,
+                    "y": 1311,
+                    "width": 1632,
+                    "height": 1931
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0498.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1865,
+                    "y": 863,
+                    "width": 2361,
+                    "height": 1354
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0578.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1451,
+                    "y": 2114,
+                    "width": 2640,
+                    "height": 2869
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0513.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1009,
+                    "y": 2259,
+                    "width": 1724,
+                    "height": 1740
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0507.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1663,
+                    "y": 1561,
+                    "width": 2225,
+                    "height": 2100
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0593.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1699,
+                    "y": 849,
+                    "width": 2318,
+                    "height": 1386
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0586.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1601,
+                    "y": 963,
+                    "width": 1980,
+                    "height": 1385
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0592.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1525,
+                    "y": 933,
+                    "width": 2220,
+                    "height": 1533
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0512.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1674,
+                    "y": 2973,
+                    "width": 1505,
+                    "height": 1423
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0499.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2248,
+                    "y": 1892,
+                    "width": 1718,
+                    "height": 1808
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0472.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 2510,
+                    "y": 1385,
+                    "width": 2046,
+                    "height": 2144
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0466.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1996,
+                    "y": 1656,
+                    "width": 1909,
+                    "height": 1974
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0712.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2237,
+                    "y": 699,
+                    "width": 1125,
+                    "height": 953
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0633.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1636,
+                    "y": 2286,
+                    "width": 2400,
+                    "height": 2012
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0619.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2409,
+                    "y": 1669,
+                    "width": 2369,
+                    "height": 1861
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0631.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1028,
+                    "y": 2431,
+                    "width": 1762,
+                    "height": 2400
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0625.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2939,
+                    "y": 1446,
+                    "width": 1955,
+                    "height": 2242
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0710.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2252,
+                    "y": 1465,
+                    "width": 1031,
+                    "height": 1060
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0704.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1808,
+                    "y": 1064,
+                    "width": 867,
+                    "height": 987
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0738.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2589,
+                    "y": 1283,
+                    "width": 1043,
+                    "height": 990
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0470.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1902,
+                    "y": 1450,
+                    "width": 3039,
+                    "height": 2357
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0464.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1222,
+                    "y": 988,
+                    "width": 1614,
+                    "height": 1424
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0538.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1181,
+                    "y": 2761,
+                    "width": 1664,
+                    "height": 1718
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0510.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1497,
+                    "y": 1705,
+                    "width": 2155,
+                    "height": 1844
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0584.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2026,
+                    "y": 2684,
+                    "width": 1697,
+                    "height": 2296
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0590.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1974,
+                    "y": 2651,
+                    "width": 1909,
+                    "height": 2133
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0591.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1615,
+                    "y": 1555,
+                    "width": 2422,
+                    "height": 2711
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0505.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1176,
+                    "y": 1411,
+                    "width": 2053,
+                    "height": 2017
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0465.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1805,
+                    "y": 789,
+                    "width": 1691,
+                    "height": 1516
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0739.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2178,
+                    "y": 1006,
+                    "width": 843,
+                    "height": 921
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0705.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 897,
+                    "y": 2908,
+                    "width": 911,
+                    "height": 1162
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0624.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2322,
+                    "y": 1530,
+                    "width": 2446,
+                    "height": 2581
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0630.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1926,
+                    "y": 1738,
+                    "width": 1920,
+                    "height": 2160
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0618.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 2636,
+                    "y": 1593,
+                    "width": 2373,
+                    "height": 1923
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0657.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1320,
+                    "y": 2700,
+                    "width": 1374,
+                    "height": 1587
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0789.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1104,
+                    "y": 1593,
+                    "width": 1577,
+                    "height": 1217
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0643.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1500,
+                    "y": 2597,
+                    "width": 2574,
+                    "height": 1566
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0776.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 979,
+                    "y": 1113,
+                    "width": 1118,
+                    "height": 965
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0762.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1970,
+                    "y": 1886,
+                    "width": 1210,
+                    "height": 1240
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0763.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 918,
+                    "y": 1673,
+                    "width": 1563,
+                    "height": 1485
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0777.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1715,
+                    "y": 1029,
+                    "width": 1271,
+                    "height": 1134
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0642.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1358,
+                    "y": 1759,
+                    "width": 2356,
+                    "height": 1505
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0788.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2021,
+                    "y": 2466,
+                    "width": 944,
+                    "height": 834
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0640.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1857,
+                    "y": 3052,
+                    "width": 2155,
+                    "height": 1647
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0654.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1088,
+                    "y": 2310,
+                    "width": 2176,
+                    "height": 2433
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0668.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1235,
+                    "y": 2067,
+                    "width": 1641,
+                    "height": 1871
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0749.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 905,
+                    "y": 1255,
+                    "width": 775,
+                    "height": 704
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0761.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2262,
+                    "y": 1491,
+                    "width": 1535,
+                    "height": 1309
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0775.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2833,
+                    "y": 1874,
+                    "width": 1104,
+                    "height": 1256
+                }
+            }
+        ]
+    },
+    {
+        "image": "PostIt_0549.JPG",
+        "annotations": [
+            {
+                "label": "PostIt",
+                "coordinates": {
+                    "x": 1851,
+                    "y": 959,
+                    "width": 2553,
+                    "height": 1915
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0774.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2338,
+                    "y": 732,
+                    "width": 1031,
+                    "height": 1223
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0748.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2154,
+                    "y": 996,
+                    "width": 611,
+                    "height": 698
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0655.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1173,
+                    "y": 2232,
+                    "width": 2236,
+                    "height": 2580
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0641.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1620,
+                    "y": 1544,
+                    "width": 2432,
+                    "height": 1336
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0645.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1522,
+                    "y": 1604,
+                    "width": 2574,
+                    "height": 1347
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0764.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2236,
+                    "y": 1076,
+                    "width": 1604,
+                    "height": 1657
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0770.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2319,
+                    "y": 924,
+                    "width": 1313,
+                    "height": 1117
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0758.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1475,
+                    "y": 1388,
+                    "width": 1205,
+                    "height": 1211
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0759.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 674,
+                    "y": 2501,
+                    "width": 1042,
+                    "height": 1179
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0771.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2532,
+                    "y": 1545,
+                    "width": 1149,
+                    "height": 1170
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0765.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2156,
+                    "y": 1229,
+                    "width": 1502,
+                    "height": 1555
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0650.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1252,
+                    "y": 1484,
+                    "width": 2154,
+                    "height": 1489
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0644.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1978,
+                    "y": 1266,
+                    "width": 2946,
+                    "height": 1972
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0652.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1399,
+                    "y": 2548,
+                    "width": 2122,
+                    "height": 1958
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0646.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1513,
+                    "y": 1901,
+                    "width": 2427,
+                    "height": 1221
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0773.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1645,
+                    "y": 1929,
+                    "width": 1190,
+                    "height": 1064
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0767.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2676,
+                    "y": 2185,
+                    "width": 1608,
+                    "height": 1518
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0766.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 2635,
+                    "y": 1262,
+                    "width": 994,
+                    "height": 1039
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0772.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 1990,
+                    "y": 1483,
+                    "width": 1423,
+                    "height": 1252
+                }
+            }
+        ]
+    },
+    {
+        "image": "Cuffie_0799.JPG",
+        "annotations": [
+            {
+                "label": "Cuffie",
+                "coordinates": {
+                    "x": 932,
+                    "y": 1173,
+                    "width": 927,
+                    "height": 802
+                }
+            }
+        ]
+    },
+    {
+        "image": "CosoVerde_0653.JPG",
+        "annotations": [
+            {
+                "label": "CosoVerde",
+                "coordinates": {
+                    "x": 1232,
+                    "y": 1830,
+                    "width": 2247,
+                    "height": 2171
+                }
+            }
+        ]
+    }
+]
