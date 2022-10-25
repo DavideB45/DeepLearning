@@ -139,6 +139,7 @@ class WeightReader:
 weight_reader = WeightReader(path_to_weight)
 print("all_weights.shape = {}".format(weight_reader.all_weights.shape))
 
+# solo ai primi 22 layer perchè non dipendono dal numero di classi
 def set_pretrained_weight(model,nb_conv, path_to_weight):
     weight_reader = WeightReader(path_to_weight)
     weight_reader.reset()
@@ -171,6 +172,8 @@ def set_pretrained_weight(model,nb_conv, path_to_weight):
 nb_conv = 22
 model = set_pretrained_weight(model,nb_conv, path_to_weight)
 
+# adesso inizializiamo in modo casuale il resto dei layer
+# dopodiché li alleneremo per sistemarli.
 def initialize_weight(layer,sd):
     weights = layer.get_weights()
     new_kernel = np.random.normal(size=weights[0].shape, scale=sd)
