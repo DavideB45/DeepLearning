@@ -309,10 +309,10 @@ class SimpleBatchGenerator(Sequence):
 
 # vediamo un esempio di come si usa questa classe:
 GRID_H,  GRID_W  = 13 , 13
-ANCHORS          = [ 1.07709888,   1.78171903,  
+ANCHORS          = np.array([ 1.07709888,   1.78171903,  
                     2.71054693,   5.12469308, 
                     10.47181473, 10.09646365,  
-                    5.48531347,   8.11011331]
+                    5.48531347,   8.11011331])
 ANCHORS[::2]     = ANCHORS[::2]*GRID_W  
 ANCHORS[1::2]    = ANCHORS[1::2]*GRID_H  
 print(ANCHORS)
