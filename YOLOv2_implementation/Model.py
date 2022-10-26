@@ -1,10 +1,6 @@
 import numpy as np
-LABELS = ['Dispositivo']
-
-ANCHORS = np.array([1.07709888,  1.78171903,
-                    2.71054693,  5.12469308,
-                   10.47181473, 10.09646365,
-                    5.48531347,  8.11011331])
+from AnchorBoxClustering import LABELS
+from Loss import GRID_H, GRID_W, IMAGE_H, IMAGE_W, TRUE_BOX_BUFFER, BOX, CLASS
 
 # sta guida dopo aver detto cose per le quali ancora non ho compreso il senso
 # sostiene che il modello YOLO sia semplice e che solo tutto il resto sia difficile
@@ -111,11 +107,6 @@ def define_YOLOv2(IMAGE_H,IMAGE_W,GRID_H,GRID_W,TRUE_BOX_BUFFER,BOX,CLASS, train
     return(model, true_boxes)
 
 # proviamo a crare un modello e vediamo se si crea:
-IMAGE_H, IMAGE_W  = 416, 416
-GRID_H,  GRID_W   = 13 , 13
-TRUE_BOX_BUFFER   = 50
-BOX               = int(len(ANCHORS)/2)
-CLASS             = len(LABELS)
 ## true_boxes is the tensor that takes "b_batch"
 model, true_boxes = define_YOLOv2(IMAGE_H,IMAGE_W,GRID_H,GRID_W,TRUE_BOX_BUFFER,BOX,CLASS, 
                                   trainable=False)

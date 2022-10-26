@@ -1,21 +1,18 @@
 import cv2
-from tensorflow_hub import image_embedding_column
-from AnchorBoxClustering import parse_annotation
+from AnchorBoxClustering import parse_annotation, LABELS, results
 import numpy as np
 import matplotlib.pyplot as plt
 
-LABELS = ['dispositivo']
+train_img = 'YOLOv2_implementation/training/img/'
+train_ann = 'YOLOv2_implementation/training/ann/'
 
-train_img = 'YOLOv2_implementation/training/img'
-train_ann = 'YOLOv2_implementation/training/ann'
+valid_img = 'YOLOv2_implementation/validation/img/'
+valid_ann = 'YOLOv2_implementation/validation/ann/'
 
-valid_img = 'YOLOv2_implementation/validation/img'
-valid_ann = 'YOLOv2_implementation/validation/ann'
+test_img = 'YOLOv2_implementation/test/img/'
+test_ann = 'YOLOv2_implementation/test/ann/'
 
-test_img = 'YOLOv2_implementation/test/img'
-test_ann = 'YOLOv2_implementation/test/ann'
-
-np.random.seed(10)
+np.random.seed(2)
 train_image, seen_train_labels = parse_annotation(train_ann,
                                                   train_img, 
                                                   labels=LABELS)
@@ -309,15 +306,18 @@ class SimpleBatchGenerator(Sequence):
 
 # vediamo un esempio di come si usa questa classe:
 GRID_H,  GRID_W  = 13 , 13
-ANCHORS          = np.array([ 1.07709888,   1.78171903,  
-                    2.71054693,   5.12469308, 
-                    10.47181473, 10.09646365,  
-                    5.48531347,   8.11011331])
+Nanchor_box = int(input("How many anchors? : "))
+ANCHORS = results[Nanchor_box]["clusters"]
+temp = []
+for el in ANCHORS:
+    temp.append(el[0])
+    temp.append(el[1])
+ANCHORS = np.array(temp)
+print(ANCHORS)
 ANCHORS[::2]     = ANCHORS[::2]*GRID_W  
 ANCHORS[1::2]    = ANCHORS[1::2]*GRID_H  
-print(ANCHORS)
 IMAGE_H, IMAGE_W = 416, 416
-BATCH_SIZE       = 16
+BATCH_SIZE       = 8
 TRUE_BOX_BUFFER  = 50
 generator_config = {
     'IMAGE_H'         : IMAGE_H, 
@@ -331,7 +331,7 @@ generator_config = {
 }
 train_batch_generator = SimpleBatchGenerator(train_image, generator_config,
                                              norm=imgNormalize, shuffle=True)
-[x_batch,b_batch],y_batch = train_batch_generator.__getitem__(idx=3)
+[x_batch,b_batch],y_batch = train_batch_generator.__getitem__(idx=4)
 print("x_batch: (BATCH_SIZE, IMAGE_H, IMAGE_W, N channels)           = {}".format(x_batch.shape))
 print("y_batch: (BATCH_SIZE, GRID_H, GRID_W, BOX, 4 + 1 + N classes) = {}".format(y_batch.shape))
 print("b_batch: (BATCH_SIZE, 1, 1, 1, TRUE_BOX_BUFFER, 4)            = {}".format(b_batch.shape))
@@ -406,4 +406,4 @@ def plot_grid(irow):
 
 plot_image_with_grid_cell_partition(iframe)
 plot_grid(iframe)
-plt.show()
+#plt.show()

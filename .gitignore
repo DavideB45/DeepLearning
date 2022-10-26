@@ -18,6 +18,8 @@ data/val/image/*
 data/val/annotation/*
 *.weights
 *.JPG
+*.jpeg
+*.xml
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

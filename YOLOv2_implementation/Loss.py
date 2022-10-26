@@ -2,39 +2,28 @@ import tensorflow as tf
 import numpy as np
 
 from AnchorBoxClustering import LABELS, parse_annotation
-from InOut import SimpleBatchGenerator
-from Model import ANCHORS
-'''
-               -  true_boxes
-               -  GRID_W
-               -  GRID_H
-               -  BATCH_SIZE
-               - BOX
-'''
+from InOut import SimpleBatchGenerator, ANCHORS
+from InOut import GRID_H, GRID_W, IMAGE_H, IMAGE_W, TRUE_BOX_BUFFER, generator_config
+import matplotlib.pyplot as plt
+
 LAMBDA_NO_OBJECT = 1.0
 LAMBDA_OBJECT    = 5.0
 LAMBDA_COORD     = 1.0
 LAMBDA_CLASS     = 1.0
-BATCH_SIZE        = 500
-IMAGE_H, IMAGE_W  = 416, 416
-GRID_H,  GRID_W   = 13 , 13
-TRUE_BOX_BUFFER   = 50
+BATCH_SIZE        = 16
 BOX               = int(len(ANCHORS)/2)
 CLASS             = len(LABELS)
 
-generator_config = {
-    'IMAGE_H'         : IMAGE_H, 
-    'IMAGE_W'         : IMAGE_W,
-    'GRID_H'          : GRID_H,  
-    'GRID_W'          : GRID_W,
-    'LABELS'          : LABELS,
-    'ANCHORS'         : ANCHORS,
-    'BATCH_SIZE'      : BATCH_SIZE,
-    'TRUE_BOX_BUFFER' : TRUE_BOX_BUFFER,
-}
+generator_config['BATCH_SIZE'] = BATCH_SIZE
 
-train_img = 'YOLOv2_implementation/training/img'
-train_ann = 'YOLOv2_implementation/training/ann'
+train_img = 'YOLOv2_implementation/training/img/'
+train_ann = 'YOLOv2_implementation/training/ann/'
+
+valid_img = 'YOLOv2_implementation/validation/img/'
+valid_ann = 'YOLOv2_implementation/validation/ann/'
+
+test_img = 'YOLOv2_implementation/test/img/'
+test_ann = 'YOLOv2_implementation/test/ann/'
 train_image, seen_train_labels = parse_annotation(train_ann,
                                                   train_img, 
                                                   labels=LABELS)
@@ -130,7 +119,7 @@ def calc_loss_xywh(true_box_conf,
     # lambda_{coord} L_{i,j}^{obj} 
     # np.array of shape (Nbatch, Ngrid h, N grid w, N anchor, 1)
     coord_mask  = tf.expand_dims(true_box_conf, axis=-1) * COORD_SCALE 
-    nb_coord_box = tf.reduce_sum(tf.to_float(coord_mask > 0.0))
+    nb_coord_box = tf.reduce_sum(tf.cast(coord_mask > 0.0, dtype=tf.float32))
     loss_xy      = tf.reduce_sum(tf.square(true_box_xy-pred_box_xy) * coord_mask) / (nb_coord_box + 1e-6) / 2.
     loss_wh      = tf.reduce_sum(tf.square(true_box_wh-pred_box_wh) * coord_mask) / (nb_coord_box + 1e-6) / 2.
     return(loss_xy + loss_wh, coord_mask)
@@ -151,7 +140,7 @@ def calc_loss_class(true_box_conf,CLASS_SCALE, true_box_class,pred_box_class):
         0 
     '''   
     class_mask   = true_box_conf  * CLASS_SCALE ## L_{i,j}^obj * lambda_class
-    nb_class_box = tf.reduce_sum(tf.to_float(class_mask > 0.0))
+    nb_class_box = tf.reduce_sum(tf.cast(class_mask > 0.0, dtype=tf.float32))
     loss_class   = tf.nn.sparse_softmax_cross_entropy_with_logits(labels = true_box_class, 
                                                                   logits = pred_box_class)
     loss_class   = tf.reduce_sum(loss_class * class_mask) / (nb_class_box + 1e-6)   
@@ -243,8 +232,10 @@ def calc_IOU_pred_true_best(pred_box_xy,pred_box_wh,true_boxes):
         NOTE: a same object may be contained in multiple (grid_cell, anchor) pair
               from best_ious, you cannot tell how may actual objects are captured as the "best" object
     '''
-    true_xy = true_boxes[..., 0:2]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
-    true_wh = true_boxes[..., 2:4]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
+    #true_xy = true_boxes[..., 0:2]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
+    #true_wh = true_boxes[..., 2:4]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
+    true_xy = tf.Variable(np.zeros_like(b_batch),dtype="float32")[..., 0:2]
+    true_wh = tf.Variable(np.zeros_like(b_batch),dtype="float32")[..., 2:4]
     
     pred_xy = tf.expand_dims(pred_box_xy, 4) # (N batch, N grid_h, N grid_w, N anchor, 1, 2)
     pred_wh = tf.expand_dims(pred_box_wh, 4) # (N batch, N grid_h, N grid_w, N anchor, 1, 2)
@@ -282,7 +273,7 @@ def get_conf_mask(best_ious, true_box_conf, true_box_conf_IOU,LAMBDA_NO_OBJECT, 
               when there is an object in (grid cell, anchor) pair        
     '''
 
-    conf_mask = tf.to_float(best_ious < 0.6) * (1 - true_box_conf) * LAMBDA_NO_OBJECT
+    conf_mask = tf.cast(best_ious < 0.6, dtype=tf.float32) * (1 - true_box_conf) * LAMBDA_NO_OBJECT
     # penalize the confidence of the boxes, which are reponsible for corresponding ground truth box
     conf_mask = conf_mask + true_box_conf_IOU * LAMBDA_OBJECT
     return(conf_mask)
@@ -298,7 +289,7 @@ def calc_loss_conf(conf_mask,true_box_conf_IOU, pred_box_conf):
     # the number of (grid cell, anchor) pair that has an assigned object or
     # that has no assigned object but some objects may be in bounding box.
     # N conf
-    nb_conf_box  = tf.reduce_sum(tf.to_float(conf_mask  > 0.0))
+    nb_conf_box  = tf.reduce_sum(tf.cast(conf_mask  > 0.0, dtype=tf.float32))
     loss_conf    = tf.reduce_sum(tf.square(true_box_conf_IOU-pred_box_conf) * conf_mask)  / (nb_conf_box  + 1e-6) / 2.
     return(loss_conf)
 
@@ -352,14 +343,11 @@ def custom_loss(y_true, y_pred):
     loss = loss_xywh + loss_conf + loss_class
     return loss
 
+
 size   = BATCH_SIZE*GRID_W*GRID_H*BOX*(4 + 1 + CLASS)
 y_pred = np.random.normal(size=size,scale = 10/(GRID_H*GRID_W)) 
 y_pred = y_pred.reshape(BATCH_SIZE,GRID_H,GRID_W,BOX,4 + 1 + CLASS)
 y_pred_tf = tf.constant(y_pred,dtype="float32")
 y_batch_tf = tf.constant(y_batch,dtype="float32")
 true_boxes = tf.Variable(np.zeros_like(b_batch),dtype="float32")
-loss_tf    = custom_loss(y_batch_tf, y_pred_tf) 
-with tf.Session() as sess:
-    loss = sess.run(loss_tf,
-                    feed_dict = {true_boxes: b_batch})
-print(loss)
+loss_tf    = custom_loss(y_batch_tf, y_pred_tf)

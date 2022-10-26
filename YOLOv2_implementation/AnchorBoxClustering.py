@@ -8,16 +8,16 @@ import numpy as np
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 
-LABELS = ['dispositivo']
+LABELS = ['Evidenziatore', 'Gel', 'Matita']
 
-train_img = 'YOLOv2_implementation/training/img'
-train_ann = 'YOLOv2_implementation/training/ann'
+train_img = 'YOLOv2_implementation/training/img/'
+train_ann = 'YOLOv2_implementation/training/ann/'
 
-valid_img = 'YOLOv2_implementation/validation/img'
-valid_ann = 'YOLOv2_implementation/validation/ann'
+valid_img = 'YOLOv2_implementation/validation/img/'
+valid_ann = 'YOLOv2_implementation/validation/ann/'
 
-test_img = 'YOLOv2_implementation/test/img'
-test_ann = 'YOLOv2_implementation/test/ann'
+test_img = 'YOLOv2_implementation/test/img/'
+test_ann = 'YOLOv2_implementation/test/ann/'
 
 
 
@@ -96,28 +96,24 @@ for ann in val_image:
 wh = np.array(wh)
 print("clustering feature data is ready. shape = (N object, width and height) =  {}".format(wh.shape))
 
-########################################################################
-########################################################################
-########################################################################
-wh = []
-testAnnotations = json.load(open('test.json'))
-for img in testAnnotations:
-    imWidth = float(img['annotations'][0]['coordinates']['width'])
-    imHeight = float(img['annotations'][0]['coordinates']['height'])
-    temp = [imWidth,imHeight]
-    wh.append(temp)
-wh = np.array(wh)
-########################################################################
-########################################################################
-########################################################################
-
+'''
+if False:
+    wh = []
+    testAnnotations = json.load(open('test.json'))
+    for img in testAnnotations:
+        imWidth = float(img['annotations'][0]['coordinates']['width'])
+        imHeight = float(img['annotations'][0]['coordinates']['height'])
+        temp = [imWidth,imHeight]
+        wh.append(temp)
+    wh = np.array(wh)
+'''
 # let's visualize how the data are distributed
 plt.figure(figsize=(10,10))
 plt.scatter(wh[:,0],wh[:,1],alpha=0.1)
 plt.title("Clusters",fontsize=20)
 plt.xlabel("normalized width",fontsize=20)
 plt.ylabel("normalized height",fontsize=20)
-plt.show()
+#plt.show()
 
 # kmeans clustering
 # il primo passo è selezionare il numero di cluster
@@ -212,7 +208,7 @@ for k in range(2,kmax):
     ax = fig.add_subplot(int(kmax/2),2,count)
     plot_cluster_result(plt,clusters,nearest_clusters,1 - WithinClusterSumDist,wh)
     count += 1
-plt.show()
+#plt.show()
 
 # il grafico è molto bello ma incomprensibile quindi utilizziamo un altro grafico 
 # in cui cerchiamo di vedere in maniera un po' euristica cosa prendere
@@ -222,7 +218,7 @@ plt.plot(np.arange(2,kmax),
 plt.title("within cluster mean of {}".format(dist))
 plt.ylabel("mean IOU")
 plt.xlabel("N clusters (= N anchor boxes)")
-plt.show()
+#plt.show()
 
 Nanchor_box = 4
 print(results[Nanchor_box]["clusters"])
