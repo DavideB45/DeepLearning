@@ -1,9 +1,7 @@
 # gli anchor box sono i rettangoli che useremo per circondare gli oggetti
 # dobbiamo decidere quanti ne vogliamo e di che forma li vogliamo
 # il numero determina quanti oggetti vicini potremo trovare
-import json
 import os
-import json
 import numpy as np
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt

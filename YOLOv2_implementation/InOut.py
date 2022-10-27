@@ -329,6 +329,7 @@ generator_config = {
     'BATCH_SIZE'      : BATCH_SIZE,
     'TRUE_BOX_BUFFER' : TRUE_BOX_BUFFER,
 }
+'''
 train_batch_generator = SimpleBatchGenerator(train_image, generator_config,
                                              norm=imgNormalize, shuffle=True)
 [x_batch,b_batch],y_batch = train_batch_generator.__getitem__(idx=4)
@@ -407,3 +408,4 @@ def plot_grid(irow):
 plot_image_with_grid_cell_partition(iframe)
 plot_grid(iframe)
 #plt.show()
+'''

@@ -232,10 +232,8 @@ def calc_IOU_pred_true_best(pred_box_xy,pred_box_wh,true_boxes):
         NOTE: a same object may be contained in multiple (grid_cell, anchor) pair
               from best_ious, you cannot tell how may actual objects are captured as the "best" object
     '''
-    #true_xy = true_boxes[..., 0:2]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
-    #true_wh = true_boxes[..., 2:4]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
-    true_xy = tf.Variable(np.zeros_like(b_batch),dtype="float32")[..., 0:2]
-    true_wh = tf.Variable(np.zeros_like(b_batch),dtype="float32")[..., 2:4]
+    true_xy = true_boxes[..., 0:2]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
+    true_wh = true_boxes[..., 2:4]           # (N batch, 1, 1, 1, TRUE_BOX_BUFFER, 2)
     
     pred_xy = tf.expand_dims(pred_box_xy, 4) # (N batch, N grid_h, N grid_w, N anchor, 1, 2)
     pred_wh = tf.expand_dims(pred_box_wh, 4) # (N batch, N grid_h, N grid_w, N anchor, 1, 2)
@@ -344,6 +342,7 @@ def custom_loss(y_true, y_pred):
     return loss
 
 
+'''
 size   = BATCH_SIZE*GRID_W*GRID_H*BOX*(4 + 1 + CLASS)
 y_pred = np.random.normal(size=size,scale = 10/(GRID_H*GRID_W)) 
 y_pred = y_pred.reshape(BATCH_SIZE,GRID_H,GRID_W,BOX,4 + 1 + CLASS)
@@ -351,3 +350,81 @@ y_pred_tf = tf.constant(y_pred,dtype="float32")
 y_batch_tf = tf.constant(y_batch,dtype="float32")
 true_boxes = tf.Variable(np.zeros_like(b_batch),dtype="float32")
 loss_tf    = custom_loss(y_batch_tf, y_pred_tf)
+'''
+def custom_loss_core(y_true,
+                     y_pred,
+                     true_boxes,
+                     GRID_W,
+                     GRID_H,
+                     BATCH_SIZE,
+                     ANCHORS,
+                     LAMBDA_COORD,
+                     LAMBDA_CLASS,
+                     LAMBDA_NO_OBJECT, 
+                     LAMBDA_OBJECT):
+    '''
+    y_true : (N batch, N grid h, N grid w, N anchor, 4 + 1 + N classes)
+    y_true[irow, i_gridh, i_gridw, i_anchor, :4] = center_x, center_y, w, h
+    
+        center_x : The x coordinate center of the bounding box.
+                   Rescaled to range between 0 and N gird  w (e.g., ranging between [0,13)
+        center_y : The y coordinate center of the bounding box.
+                   Rescaled to range between 0 and N gird  h (e.g., ranging between [0,13)
+        w        : The width of the bounding box.
+                   Rescaled to range between 0 and N gird  w (e.g., ranging between [0,13)
+        h        : The height of the bounding box.
+                   Rescaled to range between 0 and N gird  h (e.g., ranging between [0,13)
+                   
+    y_true[irow, i_gridh, i_gridw, i_anchor, 4] = ground truth confidence
+        
+        ground truth confidence is 1 if object exists in this (anchor box, gird cell) pair
+    
+    y_true[irow, i_gridh, i_gridw, i_anchor, 5 + iclass] = 1 if the object is in category <iclass> else 0
+    
+    =====================================================
+    tensor that connect to the YOLO model's hack input 
+    =====================================================    
+    
+    true_boxes    
+    
+    =========================================
+    training parameters specification example 
+    =========================================
+    GRID_W             = 13
+    GRID_H             = 13
+    BATCH_SIZE         = 34
+    ANCHORS = np.array([1.07709888,  1.78171903,  # anchor box 1, width , height
+                        2.71054693,  5.12469308,  # anchor box 2, width,  height
+                       10.47181473, 10.09646365,  # anchor box 3, width,  height
+                        5.48531347,  8.11011331]) # anchor box 4, width,  height
+    LAMBDA_NO_OBJECT = 1.0
+    LAMBDA_OBJECT    = 5.0
+    LAMBDA_COORD     = 1.0
+    LAMBDA_CLASS     = 1.0
+    ''' 
+    BOX = int(len(ANCHORS)/2)    
+    # Step 1: Adjust prediction output
+    cell_grid   = get_cell_grid(GRID_W,GRID_H,BATCH_SIZE,BOX)
+    pred_box_xy, pred_box_wh, pred_box_conf, pred_box_class = adjust_scale_prediction(y_pred,cell_grid,ANCHORS)
+    # Step 2: Extract ground truth output
+    true_box_xy, true_box_wh, true_box_conf, true_box_class = extract_ground_truth(y_true)
+    # Step 3: Calculate loss for the bounding box parameters
+    loss_xywh, coord_mask = calc_loss_xywh(true_box_conf,LAMBDA_COORD,
+                                           true_box_xy, pred_box_xy,true_box_wh,pred_box_wh)
+    # Step 4: Calculate loss for the class probabilities
+    loss_class  = calc_loss_class(true_box_conf,LAMBDA_CLASS,
+                                   true_box_class,pred_box_class)
+    # Step 5: For each (grid cell, anchor) pair, 
+    #         calculate the IoU between predicted and ground truth bounding box
+    true_box_conf_IOU = calc_IOU_pred_true_assigned(true_box_conf,
+                                                    true_box_xy, true_box_wh,
+                                                    pred_box_xy, pred_box_wh)
+    # Step 6: For each predicted bounded box from (grid cell, anchor box), 
+    #         calculate the best IOU, regardless of the ground truth anchor box that each object gets assigned.
+    best_ious = calc_IOU_pred_true_best(pred_box_xy,pred_box_wh,true_boxes)
+    # Step 7: For each grid cell, calculate the L_{i,j}^{noobj}
+    conf_mask = get_conf_mask(best_ious, true_box_conf, true_box_conf_IOU,LAMBDA_NO_OBJECT, LAMBDA_OBJECT)
+    # Step 8: Calculate loss for the confidence
+    loss_conf = calc_loss_conf(conf_mask,true_box_conf_IOU, pred_box_conf)
+    loss = loss_xywh + loss_conf + loss_class
+    return(loss)

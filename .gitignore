@@ -20,6 +20,7 @@ data/val/annotation/*
 *.JPG
 *.jpeg
 *.xml
+model_716/*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

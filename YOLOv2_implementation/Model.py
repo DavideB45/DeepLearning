@@ -126,9 +126,6 @@ class WeightReader:
     
     def reset(self):
         self.offset = 4
-                
-weight_reader = WeightReader(path_to_weight)
-print("all_weights.shape = {}".format(weight_reader.all_weights.shape))
 
 # solo ai primi 22 layer perchè non dipendono dal numero di classi
 def set_pretrained_weight(model,nb_conv, path_to_weight):
@@ -160,9 +157,6 @@ def set_pretrained_weight(model,nb_conv, path_to_weight):
     return(model)
 
 
-nb_conv = 22
-model = set_pretrained_weight(model,nb_conv, path_to_weight)
-
 # adesso inizializiamo in modo casuale il resto dei layer
 # dopodiché li alleneremo per sistemarli.
 def initialize_weight(layer,sd):
@@ -170,6 +164,3 @@ def initialize_weight(layer,sd):
     new_kernel = np.random.normal(size=weights[0].shape, scale=sd)
     new_bias   = np.random.normal(size=weights[1].shape, scale=sd)
     layer.set_weights([new_kernel, new_bias])
-    
-layer   = model.layers[-4] # the last convolutional layer
-initialize_weight(layer,sd=GRID_H*GRID_W)
