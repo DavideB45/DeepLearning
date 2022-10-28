@@ -7,6 +7,7 @@ from backend import ImageReader
 import matplotlib.pyplot as plt
 
 LABELS = ['Evidenziatore', 'Gel', 'Matita']
+LABELS = ['Gel']
 ANCHORS = np.array([1.07709888,  1.78171903,  # anchor box 1, width , height
                     2.71054693,  5.12469308,  # anchor box 2, width,  height
                    10.47181473, 10.09646365,  # anchor box 3, width,  height
@@ -44,8 +45,8 @@ X_test = np.expand_dims(out,0)
 print(X_test.shape)
 # handle the hack input
 dummy_array = np.zeros((1,1,1,1,TRUE_BOX_BUFFER,4))
-#y_pred = model.predict([X_test,dummy_array])##################################################################
-y_pred = model.predict(X_test)
+y_pred = model.predict([X_test,dummy_array])##################################################################
+#y_pred = model.predict(X_test)
 print(y_pred.shape)
 
 
@@ -257,15 +258,16 @@ PATH = './model_716.hdf5'
 print('loading model')#
 model = load_model(PATH, custom_objects={'custom_loss': custom_loss, "BatchNormalization": BatchNormalization})
 '''
-print('converting model')#
-#coreMlModel = ct.convert(model,
-#                        inputs=[ct.ImageType(name="input_image"), ct.TensorType(name="input_hack")],
-#                        convert_to='neuralnetwork', source="tensorflow")
-print(model.output_shape)
-coreMlModel = ct.convert(model,
+if(True):
+    print('converting model')#
+    #coreMlModel = ct.convert(model,
+    #                    inputs=[ct.ImageType(name="input_image"), ct.TensorType(name="input_hack")],
+    #                    convert_to='neuralnetwork', source="tensorflow")
+    print(model.output_shape)
+    coreMlModel = ct.convert(model,
                         inputs=[ct.ImageType(name="input_image", scale= 1/255.)],
                         outputs=[ct.TensorType(name="Identity")],
                         convert_to='neuralnetwork', source="tensorflow")
-print('saving model')#
-coreMlModel.save('coreML_model.mlpackage')
-#print(coreMlModel.get_spec())
+    print('saving model')#
+    coreMlModel.save('coreML_model.mlpackage')
+    #print(coreMlModel.get_spec())

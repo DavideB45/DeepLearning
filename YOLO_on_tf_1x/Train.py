@@ -1,3 +1,4 @@
+from random import shuffle
 from backend import custom_loss_core, SimpleBatchGenerator, define_YOLOv2, set_pretrained_weight, initialize_weight
 import numpy as np
 import coremltools as ct
@@ -7,10 +8,18 @@ print(tf.__version__)
 from tensorflow.python.framework.ops import disable_eager_execution
 disable_eager_execution()
 
+LABELS = ['aeroplane',  'bicycle', 'bird',  'boat',      'bottle', 
+          'bus',        'car',      'cat',  'chair',     'cow',
+          'diningtable','dog',    'horse',  'motorbike', 'person',
+          'pottedplant','sheep',  'sofa',   'train',   'tvmonitor']
 LABELS = ['Evidenziatore', 'Gel', 'Matita']
+LABELS = ['Gel']
 
 train_img = 'YOLOv2_implementation/training/img/'
 train_ann = 'YOLOv2_implementation/training/ann/'
+
+#train_img = '/Users/davideborghini/Desktop/VOCdevkit/VOC2012/JPEGImages/'
+#train_ann = '/Users/davideborghini/Desktop/VOCdevkit/VOC2012/Annotations/'
 
 valid_img = 'YOLOv2_implementation/validation/img/'
 valid_ann = 'YOLOv2_implementation/validation/ann/'
@@ -51,17 +60,22 @@ train_image, seen_train_labels = parse_annotation(train_ann,
                                                   train_img, 
                                                   labels=LABELS)
 print("N train = {}".format(len(train_image)))
+valid_image, seen_valid_labels = parse_annotation(valid_ann,
+                                                  valid_img,
+                                                  labels=LABELS)
+print("N valid = {}".format(len(valid_image)))
 
 def normalize(image):
-    return image / 255.
+    return image/255.
 train_batch_generator = SimpleBatchGenerator(train_image, generator_config,
                                              norm=normalize, shuffle=True)
+valid_batch = SimpleBatchGenerator(valid_image, generator_config, norm=normalize, shuffle=True)
 model, true_boxes = define_YOLOv2(IMAGE_H,IMAGE_W,GRID_H,GRID_W,TRUE_BOX_BUFFER,BOX,CLASS, 
                                   trainable=False)
 model.summary()
 
 path_to_weight = "./yolov2.weights"
-nb_conv        = 22
+nb_conv        = 23
 model          = set_pretrained_weight(model,nb_conv, path_to_weight)
 layer          = model.layers[-4] # the last convolutional layer
 initialize_weight(layer,sd=1/(GRID_H*GRID_W))
@@ -112,7 +126,7 @@ model.compile(loss=custom_loss, optimizer=optimizer)
 
 model.fit_generator(generator        = train_batch_generator, 
                     steps_per_epoch  = len(train_batch_generator), 
-                    epochs           = 2, 
+                    epochs           = 100, 
                     verbose          = 1,
                     #validation_data  = valid_batch,
                     #validation_steps = len(valid_batch),

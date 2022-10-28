@@ -483,8 +483,8 @@ def define_YOLOv2(IMAGE_H,IMAGE_W,GRID_H,GRID_W,TRUE_BOX_BUFFER,BOX,CLASS, train
 
     # small hack to allow true_boxes to be registered when Keras build the model 
     # for more information: https://github.com/fchollet/keras/issues/2790
-    true_boxes_out  = Lambda(lambda inX: inX, name="out_true_hack")(true_boxes)#########################################################
-    output = Lambda(lambda args: args[0],name="hack_layer")([output, true_boxes_out])###################################################
+    #true_boxes_out  = Lambda(lambda inX: inX, name="out_true_hack")(true_boxes)#########################################################
+    output = Lambda(lambda args: args[0],name="hack_layer")([output, true_boxes])###################################################
 
     model = Model([input_image, true_boxes], output)####################################################################################
     return(model, true_boxes)###########################################################################################################

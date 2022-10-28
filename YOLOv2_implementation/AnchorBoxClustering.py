@@ -206,7 +206,7 @@ for k in range(2,kmax):
     ax = fig.add_subplot(int(kmax/2),2,count)
     plot_cluster_result(plt,clusters,nearest_clusters,1 - WithinClusterSumDist,wh)
     count += 1
-#plt.show()
+plt.show()
 
 # il grafico è molto bello ma incomprensibile quindi utilizziamo un altro grafico 
 # in cui cerchiamo di vedere in maniera un po' euristica cosa prendere
@@ -216,7 +216,10 @@ plt.plot(np.arange(2,kmax),
 plt.title("within cluster mean of {}".format(dist))
 plt.ylabel("mean IOU")
 plt.xlabel("N clusters (= N anchor boxes)")
-#plt.show()
+plt.show()
 
 Nanchor_box = 4
 print(results[Nanchor_box]["clusters"])
+for el in (results[Nanchor_box]["clusters"]):
+    print(el[0]*13)
+    print(el[1]*13)
