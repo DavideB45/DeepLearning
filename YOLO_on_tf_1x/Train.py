@@ -3,6 +3,7 @@ from backend import custom_loss_core, SimpleBatchGenerator, define_YOLOv2, set_p
 import numpy as np
 import coremltools as ct
 import os
+import matplotlib.pyplot as plt
 import tensorflow as tf
 print(tf.__version__)
 from tensorflow.python.framework.ops import disable_eager_execution
@@ -13,7 +14,6 @@ LABELS = ['aeroplane',  'bicycle', 'bird',  'boat',      'bottle',
           'diningtable','dog',    'horse',  'motorbike', 'person',
           'pottedplant','sheep',  'sofa',   'train',   'tvmonitor']
 LABELS = ['Evidenziatore', 'Gel', 'Matita']
-LABELS = ['Gel']
 
 train_img = 'YOLOv2_implementation/training/img/'
 train_ann = 'YOLOv2_implementation/training/ann/'
@@ -27,11 +27,20 @@ valid_ann = 'YOLOv2_implementation/validation/ann/'
 test_img = 'YOLOv2_implementation/test/img/'
 test_ann = 'YOLOv2_implementation/test/ann/'
 
-ANCHORS = np.array([1.07709888,  1.78171903,  # anchor box 1, width , height
-                    2.71054693,  5.12469308,  # anchor box 2, width,  height
-                   10.47181473, 10.09646365,  # anchor box 3, width,  height
-                    5.48531347,  8.11011331]) # anchor box 4, width,  height
-BATCH_SIZE = 16
+ANCHORS = np.array([4.968098958333333,2.5675967261904766,
+6.160227272727272,4.064346590909091,
+2.126862373737374,3.448405934343435,
+6.035069444444445,7.6781250000000005,
+3.2735624999999997,4.494479166666666,
+5.744128787878788,1.216903409090909])
+
+
+ANCHORS = np.array([5.2297, 1.9902,
+                    4.7930,4.0522,
+                    2.2934,3.7465,
+                    6.0350,7.6781])
+
+BATCH_SIZE = 32
 BOX = int(len(ANCHORS)/2)
 CLASS = len(LABELS)
 LAMBDA_NO_OBJECT = 1.0
@@ -94,6 +103,14 @@ def custom_loss(y_true, y_pred):
                      LAMBDA_OBJECT)
     return loss
 
+from backend import get_intersect_area, extract_ground_truth
+def custom_accuracy(y_true, y_pred):
+    true_xy, true_wh, _, _ = extract_ground_truth(y_true)
+    pred_xy, pred_wh, _, _ = extract_ground_truth(y_pred)
+    get_intersect_area(true_xy, true_wh, pred_xy, pred_wh)
+    squared_difference = tf.square(y_true - y_pred)
+    return tf.reduce_mean(squared_difference, axis=-1)
+
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 from keras.optimizers import adam_v2 as Adam
 
@@ -119,18 +136,42 @@ checkpoint = ModelCheckpoint('weights_yolo_on_voc2012.h5',
 
 
 optimizer = Adam.Adam(lr=0.5e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
+#optimizer = Adam.Adam()
 #optimizer = SGD(lr=1e-4, decay=0.0005, momentum=0.9)
 #optimizer = RMSprop(lr=1e-4, rho=0.9, epsilon=1e-08, decay=0.0)
 
 model.compile(loss=custom_loss, optimizer=optimizer)
+#model.compile(loss=custom_loss, optimizer=optimizer, metrics=[custom_accuracy])
 
-model.fit_generator(generator        = train_batch_generator, 
+history = model.fit_generator(generator        = train_batch_generator, 
                     steps_per_epoch  = len(train_batch_generator), 
-                    epochs           = 100, 
+                    epochs           = 3, 
                     verbose          = 1,
-                    #validation_data  = valid_batch,
-                    #validation_steps = len(valid_batch),
+                    validation_data  = valid_batch,
+                    validation_steps = len(valid_batch),
                     callbacks        = [early_stop, checkpoint], 
                     max_queue_size   = 3)
+
+print(history.history)
+
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+#plt.subplot(2, 1, 2)
+plt.plot(loss, label='Training Loss')
+plt.plot(val_loss, label='Validation Loss')
+plt.legend(loc='upper right')
+plt.ylabel('Cross Entropy')
+plt.ylim([0,6.0])
+plt.title('Training and Validation Loss')
+plt.xlabel('epoch')
+plt.show()
+
+#acc = history.history['accuracy']
+#val_acc = history.history['val_accuracy']
+
+
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+
 
 model.save('model_716.hdf5')

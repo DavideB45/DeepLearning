@@ -6,12 +6,27 @@ import numpy as np
 from backend import ImageReader
 import matplotlib.pyplot as plt
 
-LABELS = ['Evidenziatore', 'Gel', 'Matita']
 LABELS = ['Gel']
-ANCHORS = np.array([1.07709888,  1.78171903,  # anchor box 1, width , height
-                    2.71054693,  5.12469308,  # anchor box 2, width,  height
-                   10.47181473, 10.09646365,  # anchor box 3, width,  height
-                    5.48531347,  8.11011331]) # anchor box 4, width,  height
+LABELS = ['aeroplane',  'bicycle', 'bird',  'boat',      'bottle', 
+          'bus',        'car',      'cat',  'chair',     'cow',
+          'diningtable','dog',    'horse',  'motorbike', 'person',
+          'pottedplant','sheep',  'sofa',   'train',   'tvmonitor']
+LABELS = ['Evidenziatore', 'Gel', 'Matita']
+
+ANCHORS = np.array([4.968098958333333,2.5675967261904766,
+6.160227272727272,4.064346590909091,
+2.126862373737374,3.448405934343435,
+6.035069444444445,7.6781250000000005,
+3.2735624999999997,4.494479166666666,
+5.744128787878788,1.216903409090909])
+ANCHORS = np.array([5.2297, 1.9902,
+                    4.7930,4.0522,
+                    2.2934,3.7465,
+                    6.0350,7.6781])
+train_img = 'YOLOv2_implementation/training/img/'
+train_img = 'YOLOv2_implementation/validation/img/'
+#train_img = '/Users/davideborghini/Desktop/VOCdevkit/VOC2012/JPEGImages/'
+
 BATCH_SIZE = 16
 BOX = int(len(ANCHORS)/2)
 CLASS = len(LABELS)
@@ -34,13 +49,11 @@ generator_config = {
     'BATCH_SIZE'      : BATCH_SIZE,
     'TRUE_BOX_BUFFER' : TRUE_BOX_BUFFER,
 }
-train_img = 'YOLOv2_implementation/training/img/'
 
 model, _ = define_YOLOv2(IMAGE_H, IMAGE_W,GRID_H,GRID_W,TRUE_BOX_BUFFER,BOX,CLASS,trainable=False)
 model.load_weights("weights_yolo_on_voc2012.h5")
 imageReader = ImageReader(IMAGE_H,IMAGE_W=IMAGE_W, norm=lambda image : image / 255.)
-out = imageReader.fit(train_img + "IMG_5302 Media.jpeg")
-print(out.shape)
+out = imageReader.fit(train_img + "IMG_5292 Media.jpeg")
 X_test = np.expand_dims(out,0)
 print(X_test.shape)
 # handle the hack input
@@ -162,7 +175,7 @@ print("obj_threshold={}".format(obj_threshold))
 print("In total, YOLO can produce GRID_H * GRID_W * BOX = {} bounding boxes ".format( GRID_H * GRID_W * BOX))
 print("I found {} bounding boxes with top class probability > {}".format(len(boxes_tiny_threshold),obj_threshold))
 
-obj_threshold = 0.03
+obj_threshold = 0.05
 boxes = find_high_class_probability_bbox(netout_scale,obj_threshold)
 print("\nobj_threshold={}".format(obj_threshold))
 print("In total, YOLO can produce GRID_H * GRID_W * BOX = {} bounding boxes ".format( GRID_H * GRID_W * BOX))
@@ -243,7 +256,7 @@ def nonmax_suppression(boxes,iou_threshold,obj_threshold):
     newboxes = [ boxes[i] for i in index_boxes if boxes[i].get_score() > obj_threshold ]
     return newboxes
 
-iou_threshold = 0.01
+iou_threshold = 0.15
 final_boxes = nonmax_suppression(boxes,iou_threshold=iou_threshold,obj_threshold=obj_threshold)
 print("{} final number of boxes".format(len(final_boxes)))
 
@@ -258,7 +271,7 @@ PATH = './model_716.hdf5'
 print('loading model')#
 model = load_model(PATH, custom_objects={'custom_loss': custom_loss, "BatchNormalization": BatchNormalization})
 '''
-if(True):
+if(False):
     print('converting model')#
     #coreMlModel = ct.convert(model,
     #                    inputs=[ct.ImageType(name="input_image"), ct.TensorType(name="input_hack")],
@@ -268,6 +281,7 @@ if(True):
                         inputs=[ct.ImageType(name="input_image", scale= 1/255.)],
                         outputs=[ct.TensorType(name="Identity")],
                         convert_to='neuralnetwork', source="tensorflow")
+    coreMlModel = ct.models.neural_network.quantization_utils.quantize_weights(coreMlModel, 16)
     print('saving model')#
     coreMlModel.save('coreML_model.mlpackage')
     #print(coreMlModel.get_spec())
