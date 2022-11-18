@@ -53,7 +53,7 @@ generator_config = {
 model, _ = define_YOLOv2(IMAGE_H, IMAGE_W,GRID_H,GRID_W,TRUE_BOX_BUFFER,BOX,CLASS,trainable=False)
 model.load_weights("weights_yolo_on_voc2012.h5")
 imageReader = ImageReader(IMAGE_H,IMAGE_W=IMAGE_W, norm=lambda image : image / 255.)
-out = imageReader.fit(train_img + "IMG_5292 Media.jpeg")
+out = imageReader.fit(train_img + "IMG_5288 Media.jpeg")
 X_test = np.expand_dims(out,0)
 print(X_test.shape)
 # handle the hack input
@@ -175,7 +175,7 @@ print("obj_threshold={}".format(obj_threshold))
 print("In total, YOLO can produce GRID_H * GRID_W * BOX = {} bounding boxes ".format( GRID_H * GRID_W * BOX))
 print("I found {} bounding boxes with top class probability > {}".format(len(boxes_tiny_threshold),obj_threshold))
 
-obj_threshold = 0.05
+obj_threshold = 0.2
 boxes = find_high_class_probability_bbox(netout_scale,obj_threshold)
 print("\nobj_threshold={}".format(obj_threshold))
 print("In total, YOLO can produce GRID_H * GRID_W * BOX = {} bounding boxes ".format( GRID_H * GRID_W * BOX))
@@ -204,7 +204,8 @@ def draw_boxes(image, boxes, labels, obj_baseline=0.05,verbose=False):
         ymin = adjust_minmax(int(box.ymin*image_h),image_h)
         xmax = adjust_minmax(int(box.xmax*image_w),image_w)
         ymax = adjust_minmax(int(box.ymax*image_h),image_h)
-        text = "{:10} {:4.3f}".format(labels[box.label], box.get_score())
+        text = "{:10}".format(labels[box.label])
+        text1 = "{:4.3f}".format(box.get_score())
         if verbose:
             print("{} xmin={:4.0f},ymin={:4.0f},xmax={:4.0f},ymax={:4.0f}".format(text,xmin,ymin,xmax,ymax,text))
         cv2.rectangle(image, 
@@ -214,7 +215,14 @@ def draw_boxes(image, boxes, labels, obj_baseline=0.05,verbose=False):
                       thickness=int(sr/4))
         cv2.putText(img       = image, 
                     text      = text, 
-                    org       = (xmin+ 13, ymin + 13),
+                    org       = (xmin, ymin + 13),
+                    fontFace  = cv2.FONT_HERSHEY_SIMPLEX,
+                    fontScale = 1e-3 * image_h,
+                    color     = (1, 0, 1),
+                    thickness = 1)
+        cv2.putText(img       = image, 
+                    text      = text1, 
+                    org       = (xmin, ymin + 26),
                     fontFace  = cv2.FONT_HERSHEY_SIMPLEX,
                     fontScale = 1e-3 * image_h,
                     color     = (1, 0, 1),

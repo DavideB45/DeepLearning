@@ -143,7 +143,7 @@ class ImageReader(object):
             hsv = np.array(hsv, dtype = np.uint8)
             img = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
             return img
-        #img = brightness(img, 0.5, 3)
+        #image = brightness(image, 0.5, 3)
 
         h, w, c = image.shape
         if image is None: print('Cannot find ', image_name)

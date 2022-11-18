@@ -103,20 +103,6 @@ def custom_loss(y_true, y_pred):
                      LAMBDA_OBJECT)
     return loss
 
-from backend import calc_IOU_pred_true_assigned, extract_ground_truth,adjust_scale_prediction, get_cell_grid
-def custom_acc(y_true, y_pred):
-    true_xy, true_wh, true_box_conf, _ = extract_ground_truth(y_true)
-    cell_grid   = get_cell_grid(GRID_W,GRID_H,BATCH_SIZE,BOX)
-    pred_xy, pred_wh, _, _ = adjust_scale_prediction(y_pred,cell_grid,ANCHORS)
-    return calc_IOU_pred_true_assigned(true_box_conf, true_xy,true_wh,pred_xy,pred_wh)*10.0
-
-def custom_dis(y_true, y_pred):
-    true_xy, true_wh, _, _ = extract_ground_truth(y_true)
-    cell_grid   = get_cell_grid(GRID_W,GRID_H,BATCH_SIZE,BOX)
-    pred_xy, pred_wh, _, _ = adjust_scale_prediction(y_pred,cell_grid,ANCHORS)
-    sqDiff = tf.square(true_wh - pred_wh) + tf.square(true_xy - pred_xy)
-    return tf.reduce_mean(sqDiff, axis=-1)
-
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 from keras.optimizers import adam_v2 as Adam
 
@@ -146,12 +132,13 @@ optimizer = Adam.Adam(lr=0.5e-4, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=
 #optimizer = SGD(lr=1e-4, decay=0.0005, momentum=0.9)
 #optimizer = RMSprop(lr=1e-4, rho=0.9, epsilon=1e-08, decay=0.0)
 
-#model.compile(loss=custom_loss, optimizer=optimizer)
-model.compile(loss=custom_loss, optimizer=optimizer, metrics=[custom_acc, custom_dis])
+model.compile(loss=custom_loss, optimizer=optimizer)
+#model.compile(loss=custom_loss, optimizer=optimizer, metrics=[customIoU])
 
+print(len(model.layers))
 history = model.fit_generator(generator        = train_batch_generator, 
                     steps_per_epoch  = len(train_batch_generator), 
-                    epochs           = 5, 
+                    epochs           = 1, 
                     verbose          = 1,
                     validation_data  = valid_batch,
                     validation_steps = len(valid_batch),
@@ -160,8 +147,29 @@ history = model.fit_generator(generator        = train_batch_generator,
 
 print(history.history)
 
+for layer in model.layers[:70]:
+    layer.trainable = False
+for layer in model.layers[70:]:
+    layer.trainable = True
+model.compile(loss=custom_loss, optimizer=optimizer)
+model.summary()
+fine_tune_epochs = 10
+
+optimizer = Adam.Adam(lr=0.5e-4, epsilon=1e-08, decay=0.0)
+history_fine = model.fit_generator(generator        = train_batch_generator, 
+                    steps_per_epoch  = len(train_batch_generator), 
+                    epochs           = 200, 
+                    verbose          = 1,
+                    validation_data  = valid_batch,
+                    validation_steps = len(valid_batch),
+                    callbacks        = [checkpoint], 
+                    max_queue_size   = 3)
+
+
 loss = history.history['loss']
+loss += history_fine.history['loss']
 val_loss = history.history['val_loss']
+val_loss += history_fine.history['val_loss']
 #plt.subplot(2, 1, 2)
 plt.plot(loss, label='Training Loss')
 plt.plot(val_loss, label='Validation Loss')
@@ -172,27 +180,17 @@ plt.title('Training and Validation Loss')
 plt.xlabel('epoch')
 plt.show()
 
-acc = history.history['custom_acc']
-val_acc = history.history['val_custom_acc']
-plt.plot(acc, label='Training Loss')
-plt.plot(val_acc, label='Validation Loss')
-plt.legend(loc='upper right')
-plt.ylabel('Cross Entropy')
-plt.ylim([0,0.2])
-plt.title('Training and Validation Loss')
-plt.xlabel('epoch')
-plt.show()
+#acc = history.history['custom_acc']
+#val_acc = history.history['val_custom_acc']
+#plt.plot(acc, label='My IoU')
+#plt.plot(val_acc, label='Validation Loss')
+#plt.legend(loc='upper right')
+#plt.ylabel('Cross Entropy')
+#plt.ylim([0,1])
+#plt.title('IoU in validation')
+#plt.xlabel('epoch')
+#plt.show()
 
-dis = history.history['custom_dis']
-val_dis = history.history['val_custom_dis']
-plt.plot(dis, label='Training Loss')
-plt.plot(val_dis, label='Validation Loss')
-plt.legend(loc='upper right')
-plt.ylabel('Cross Entropy')
-plt.ylim([0,82])
-plt.title('Training and Validation Loss')
-plt.xlabel('epoch')
-plt.show()
 
 loss = history.history['loss']
 val_loss = history.history['val_loss']
