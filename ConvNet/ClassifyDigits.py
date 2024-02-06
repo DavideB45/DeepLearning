@@ -27,5 +27,7 @@ model.compile(optimizer='rmsprop',
               metrics=['accuracy'])
 model.fit(train_images, train_labels, epochs=5, batch_size=64)
 
+
+#ziopera
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print("qui si vede la potenza: ", test_acc)
